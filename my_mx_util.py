@@ -10,7 +10,7 @@ def try_gpu(i=0):
     return npx.gpu(i) if npx.num_gpus()>=i+1 else npx.cpu()
 
 
-def synthetic_data(w, b, num_examples):
+def synthetic_regression_data(w, b, num_examples):
     """Used to make synthetic data on the run
 
     Args:
@@ -26,3 +26,4 @@ def synthetic_data(w, b, num_examples):
     y = np.dot(X, w) + b
     y+= np.random.normal(0, 0.01, y.shape)
     return X, y.reshape((-1,1))
+    
