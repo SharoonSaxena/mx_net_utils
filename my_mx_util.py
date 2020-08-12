@@ -11,7 +11,7 @@ def try_gpu(i=0):
 
 
 def synthetic_data(w, b, num_examples):
-    """[summary]
+    """Used to make synthetic data on the run
 
     Args:
         w (list): list of weights for independent variables
